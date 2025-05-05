@@ -17,6 +17,8 @@ public class App {
             
         }else{
             JOptionPane.showMessageDialog(null, "Encerrando Sistema...");
+            if(op == 4)
+            System.exit(0);
 
         }
         switch(op){
@@ -26,6 +28,8 @@ public class App {
 
             default:
             JOptionPane.showMessageDialog(null, "Opção Invalida!");
+
+            
     
         }
 
