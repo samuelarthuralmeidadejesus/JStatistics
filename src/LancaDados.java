@@ -8,7 +8,7 @@ public class LancaDados {
 
         
         String resposta = JOptionPane.showInputDialog(null, 
-            "Um Monstro aparece em sua frente.\nVocê deseja atacar ele? (Sim/Não)");
+            "Um Monstro aparece\n em sua frente.\n \nVocê deseja atacar ele? \n(Sim/Não)");
 
         if (resposta != null && resposta.equalsIgnoreCase("Sim")) {
             
@@ -23,7 +23,7 @@ public class LancaDados {
             } else {
                 JOptionPane.showMessageDialog(null, "Você cancelou o lançamento.");
             }
-        } if (resposta != null && resposta.equalsIgnoreCase("Não")) {
+        } else if (resposta != null && resposta.equalsIgnoreCase("Não")) {
             
             JOptionPane.showMessageDialog(null, "Você fugiu do monstro com sucesso.");
         } else {
