@@ -67,14 +67,20 @@ public class Jardim {
                 return; 
         }
 
-        String resposta = JOptionPane.showInputDialog("Deseja Aplicar Seu Desconto De Fidelidade? (15%)");
+        int resposta = JOptionPane.showConfirmDialog(null, 
+    "Deseja Aplicar Seu Desconto De Fidelidade? (15%)", 
+    "Confirmar Desconto", 
+    JOptionPane.YES_NO_OPTION);
 
-        if (resposta.equalsIgnoreCase("sim")) {
-            valorServico = valorServico * 0.85; 
-            JOptionPane.showMessageDialog(null, "Valor com desconto: R$ " + valorServico);
-        } else {
-            JOptionPane.showMessageDialog(null, "Valor sem desconto: R$ " + valorServico);
-        }
+if (resposta == JOptionPane.YES_OPTION) {
+    valorServico = valorServico * 0.85;
+
+    JOptionPane.showMessageDialog(null, "Valor com desconto: R$ " + valorServico);
+} else {
+
+    
+    JOptionPane.showMessageDialog(null, "Valor sem desconto: R$ " + valorServico);
+}
     }
 }
 
