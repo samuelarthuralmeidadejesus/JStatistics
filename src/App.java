@@ -9,7 +9,7 @@ public class App {
 
             JOptionPane.showMessageDialog(null,"Por Favor Insira Os Seguintes Dados");
 
-            String nome = JOptionPane.showInputDialog(null,"Nome");
+            String nome = JOptionPane.showInputDialog(null,"Nome Completo");
             String endereco = JOptionPane.showInputDialog(null,"Endereço");
 
             String arquivo = "dados.txt";
